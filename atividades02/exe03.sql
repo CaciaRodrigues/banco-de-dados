@@ -22,7 +22,7 @@ SELECT * FROM tb_produtos;
 
 ALTER TABLE tb_produtos ADD categoriasId BIGINT;
 
-ALTER TABLE tb_produtos ADD CONSTRAINT fk_pizzas_categorias
+ALTER TABLE tb_produtos ADD CONSTRAINT fk_produtos_categorias
 FOREIGN KEY (categoriasId) REFERENCES tb_categorias (id);
 
 INSERT INTO tb_categorias (tipo, descricao) VALUES ("Medicamentos", "Produtos destinados ao tratamento de doenças, alívio de sintomas ou prevenção de condições de saúde.");
